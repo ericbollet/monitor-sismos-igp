@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3f5306a84fad6b07b183f5b9bd8a5301 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3f5306a84fad6b07b183f5b9bd8a5301" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3f5306a84fad6b07b183f5b9bd8a5301 = L.map(
+                "map_3f5306a84fad6b07b183f5b9bd8a5301",
+                {
+                    center: [-9.19, -75.02],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c2dea0f0b3250fcb92eaf272412b2e2a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c2dea0f0b3250fcb92eaf272412b2e2a.addTo(map_3f5306a84fad6b07b183f5b9bd8a5301);
+        
+    
+            var circle_marker_67507b1d3ec943bff45e876857307ac5 = L.circleMarker(
+                [-16.67, -73.49],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.2, "stroke": true, "weight": 3}
+            ).addTo(map_3f5306a84fad6b07b183f5b9bd8a5301);
+        
+    
+        var popup_60547952ddf5d4619bdbb84622ead66f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7de1a0c08df917d5f0f1ba0e0aa3438b = $(`<div id="html_7de1a0c08df917d5f0f1ba0e0aa3438b" style="width: 100.0%; height: 100.0%;"><b>Reporte IGP:</b> 2026-0414<br><b>Magnitud:</b> 3.6 Mw<br><b>Profundidad:</b> 40 km<br><b>Referencia:</b> 49 km al SO de Ocoña, Camaná - Arequipa<br><b>Intensidad:</b> II-III Ocoña<br><b>Fecha/Hora:</b> 2026-07-04T15:50:49.000Z</div>`)[0];
+                popup_60547952ddf5d4619bdbb84622ead66f.setContent(html_7de1a0c08df917d5f0f1ba0e0aa3438b);
+            
+        
+
+        circle_marker_67507b1d3ec943bff45e876857307ac5.bindPopup(popup_60547952ddf5d4619bdbb84622ead66f)
+        ;
+
+        
+    
+</script>
+</html>
