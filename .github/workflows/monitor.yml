@@ -5,6 +5,10 @@ on:
     - cron: '*/5 * * * *'
   workflow_dispatch:
 
+concurrency:
+  group: monitor-sismos
+  cancel-in-progress: false
+  
 jobs:
   check-sismo:
     runs-on: ubuntu-latest
